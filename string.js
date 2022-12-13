@@ -9,4 +9,23 @@ const reverseString = (string) => {
     return string.split('').reverse().join('');
 };
 
-module.exports = {stringLength,reverseString}
+class calculator{
+    constructor(num1, num2){
+        this.num1=num1;
+        this.num2=num2;
+    }
+    add(x,y){
+        return x+y;
+    }
+  subtract(x,y){
+        return x-y;
+    }
+  divide(x,y){
+        return x/y;
+    }
+  multiply(x,y){
+        return x*y;
+    }
+}
+
+module.exports = {stringLength,reverseString, calculator}

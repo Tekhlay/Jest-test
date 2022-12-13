@@ -1,16 +1,15 @@
+const {calculator,stringLength, reverseString, capitalize} = require('./string');
 
-const {calculator,stringLength, reverseString} = require('./string');
-
-test('This is short string', () => {
-    expect(stringLength('')).toBe(0);
-});
+// test('This is short string', () => {
+//     expect(stringLength('')).toBe(0);
+// });
 
 test('The string lenght is 5', () => {
     expect(stringLength('Hello')).toBe(5);
 });
-test('The is long string', () => {
-    expect(stringLength('Hello World')).toBe(11);
-});
+// test('The is long string', () => {
+//     expect(stringLength('Hello World')).toBe(11);
+// });
 
 test('This is olleh', () => {
     expect(reverseString('hello')).toBe('olleh');
@@ -32,4 +31,6 @@ describe('This is task 3', () => {
     });
 });
 
-
+test('This is capitalized Hello', () => {
+    expect(capitalize('hello')).toBe('Hello');
+});
